@@ -8,12 +8,10 @@ public class ApplicationBase extends SparkBase implements ApplicationInterface {
 
 	@Override
 	public void run(JavaSparkContext jsc, SparkSession spark, String[] args) throws Exception {
-		System.out.println("ApplicationBase Implement!");
 	}
 
 	@Override
 	public void run(SparkContext sc, SparkSession spark, String[] args) throws Exception {
-		System.out.println("ApplicationBase Implement!");
 	}
 
 }

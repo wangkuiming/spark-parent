@@ -17,7 +17,7 @@ public class SparkStartBase extends SparkBase {
 	private final static String CLASS_PREFIX = "com.qiaoda.jobs.";
 	private final static String CLASS_SUFFIX = "Application";
 
-	private static void start(String applicationClassName, JavaSparkContext jsc, SparkSession spark, String... args)
+	private static void start(String applicationClassName, JavaSparkContext jsc, SparkSession spark, String[] args)
 			throws Exception {
 		Class<?> clazz = Class.forName(applicationClassName);
 
@@ -27,6 +27,7 @@ public class SparkStartBase extends SparkBase {
 			ApplicationInterface application = (ApplicationInterface) instance;
 			System.out.println("程序运行开始!");
 			application.run(jsc, spark, args);
+			application.run(jsc.sc(), spark, args);
 			jsc.close();
 			spark.stop();
 			fs.close();
@@ -37,7 +38,7 @@ public class SparkStartBase extends SparkBase {
 
 	}
 
-	protected static final void start(String classPackage, String className, Properties properties, String... args) throws Exception {
+	protected static void start(String classPackage, String className, Properties properties, String[] args) throws Exception {
 		String fullClassName = "";
 		fullClassName = CLASS_PREFIX + classPackage + "." + CLASS_SUFFIX;
 		if (!StringUtils.isEmpty(className)) {
