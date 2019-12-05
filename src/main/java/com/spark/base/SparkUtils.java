@@ -1,4 +1,4 @@
-package com.spark.qiaoda.base;
+package com.spark.base;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

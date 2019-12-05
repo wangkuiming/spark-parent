@@ -1,6 +1,6 @@
 package com.qiaoda
 
-import com.spark.qiaoda.base.SparkStartBase
+import com.spark.base.SparkStartBase
 import java.io.FileInputStream
 import java.io.File
 import java.util.Properties

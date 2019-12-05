@@ -1,4 +1,4 @@
-package com.spark.qiaoda.base;
+package com.spark.base;
 
 import org.apache.hadoop.fs.FileSystem;
 

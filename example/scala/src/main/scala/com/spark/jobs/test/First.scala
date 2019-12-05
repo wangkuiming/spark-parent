@@ -1,9 +1,9 @@
 package com.qiaoda.jobs.test
 
-import com.spark.qiaoda.base.ApplicationBase
+import com.spark.base.ApplicationBase
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkContext
-import com.spark.qiaoda.base.ApplicationInterface
+import com.spark.base.ApplicationInterface
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkConf
 

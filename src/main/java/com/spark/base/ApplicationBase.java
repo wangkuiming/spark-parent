@@ -1,4 +1,4 @@
-package com.spark.qiaoda.base;
+package com.spark.base;
 
 import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaSparkContext;
